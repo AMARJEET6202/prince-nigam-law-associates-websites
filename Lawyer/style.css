@@ -1,0 +1,352 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1;
+    color: #6d5c5c;
+}
+
+h1, h2, h3 {
+    margin: 1rem 0;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 10px;
+    background: rgb(194, 139, 148);
+    color: black;
+}
+
+.logo {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar a {
+    color: rgb(8, 1, 1);
+    text-decoration: none;
+}
+
+.btn {
+    background: #659a71;
+    padding: 10px 15px;
+    color: rgb(2, 1, 1);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Home Section */
+.Home {
+    background: black;
+    padding: 5px;
+    text-align: center;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+}
+
+.service-list-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Team Section */
+.team {
+    background: darkgray;
+    padding: 20px;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box {
+    background:rgb(7, 7, 0);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(35, 23, 23, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 200px;
+}
+
+.box img {
+    max-width: 80%;
+    border-radius: 150%;
+}
+
+/* About Me Section */
+.about-me {
+    padding: 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-content img {
+    width: 150px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+/* Our Services Section */
+.our-services {
+    padding: 20px;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.service-box {
+    background: black;
+    color: pink;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+/* Contact Us Section */
+.contact-us {
+    padding: 20px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+.footer {
+    background: grey;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-about, .footer-links, .footer-contact {
+    width: 30%;
+}
+
+.footer-social {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social img {
+    width: 25px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+
+    .menubtn {
+        cursor: pointer;
+        display: block;
+    }
+
+    .service-list-horizontal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-container, .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-about, .footer-links, .footer-contact {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.2em;
+    }
+
+    .btn {
+        padding: 8px 10px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content img {
+        margin-bottom: 15px;
+    }
+
+    .box {
+        width: 90%;
+    }
+
+    .service-box {
+        width: 90%;
+    }
+}
+/* About Me Section Styles */
+.about-me {
+    background-color: #090404; /* Light background for contrast */
+    padding: 50px 20px; /* Padding around the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(104, 6, 6, 0.1); /* Subtle shadow for depth */
+}
+
+.about-me h2 {
+    font-size: 28px; /* Larger font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.about-content {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text alignment */
+}
+
+.about-content img {
+    width: 150px; /* Profile image width */
+    height: 150px; /* Profile image height for uniformity */
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 20px; /* Space below the image */
+    border: 3px solid #2d2d2d; /* Border around the image */
+}
+
+.about-content p {
+    max-width: 600px; /* Limit paragraph width */
+    line-height: 1.6; /* Improved readability */
+    color: #b02a2a; /* Darker color for text */
+}
+
+
+
+
+
+
+/* About Me Section Styles */
+.about-me {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 50px 20px; /* Padding around the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: relative; /* Position for pseudo-elements */
+    overflow: hidden; /* Prevent overflow of pseudo-elements */
+}
+
+.about-me h2 {
+    font-size: 28px; /* Larger font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #333; /* Dark color for heading */
+    animation: fadeInDown 0.5s ease-in-out; /* Fade-in animation for heading */
+}
+
+.about-content {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text alignment */
+    opacity: 0; /* Start with hidden content */
+    animation: fadeIn 1s forwards; /* Fade-in animation for content */
+}
+
+.about-content img {
+    width: 150px; /* Profile image width */
+    height: 150px; /* Profile image height for uniformity */
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 20px; /* Space below the image */
+    border: 3px solid #333; /* Border around the image */
+    transition: transform 0.3s ease; /* Transition for scaling */
+}
+
+/* Scale image on hover */
+.about-content img:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+.about-content p {
+    max-width: 600px; /* Limit paragraph width */
+    line-height: 1.6; /* Improved readability */
+    color: #555; /* Darker color for text */
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start fully transparent */
+    }
+    to {
+        opacity: 1; /* End fully opaque */
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        transform: translateY(-20px); /* Start slightly above */
+        opacity: 0; /* Start fully transparent */
+    }
+    to {
+        transform: translateY(0); /* End in place */
+        opacity: 1; /* End fully opaque */
+    }
+}
